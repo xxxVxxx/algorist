@@ -130,7 +130,7 @@ def min_max(A, low, high):
 
 	'''
 
-	if high - low == 1:
+	if high - low <= 1:
 		return (min(A[low], A[high]), max(A[low], A[high]))
 
 	mid = int(math.floor((low + high) / 2))
